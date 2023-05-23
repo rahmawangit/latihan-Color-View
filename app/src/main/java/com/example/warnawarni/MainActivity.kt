@@ -17,6 +17,7 @@ import java.util.Random
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
