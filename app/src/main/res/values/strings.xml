@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">warnawarni</string>
+    <string name="box_1">Biru</string>
+    <string name="box_2">Merah</string>
+    <string name="box_3">Coklat</string>
+    <string name="box_4">Hijau</string>
+    <string name="box_5">Pink</string>
+    <string name="but_random">Random</string>
+    <string name="but_reset">Reset</string>
+</resources>

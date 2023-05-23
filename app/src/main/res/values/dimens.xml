@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margins_box">24sp</dimen>
+    <dimen name="font_box">20sp</dimen>
+</resources>

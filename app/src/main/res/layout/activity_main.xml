@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_master"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/box2"
+        style="@style/Box"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#2e99e6"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="@string/box_1"
+        android:textSize="@dimen/font_box"
+        app:layout_constraintBottom_toTopOf="@+id/butt_random"
+        app:layout_constraintTop_toBottomOf="@+id/box1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/box1"
+        style="@style/Box"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/box_2"
+        android:textSize="@dimen/font_box"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        tools:layout_editor_absoluteY="159dp"
+        android:gravity = "center"
+        android:background="#db0d29"
+        />
+
+    <TextView
+        android:id="@+id/box3"
+        style="@style/Box"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margins_box"
+        android:layout_marginEnd="@dimen/margins_box"
+        android:gravity="center"
+        android:text="@string/box_3"
+        android:textSize="@dimen/font_box"
+        app:layout_constraintBottom_toTopOf="@+id/box4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/box2"
+        app:layout_constraintTop_toTopOf="@+id/box2"
+        android:background="#80090f"
+        />
+
+    <TextView
+        android:id="@+id/box4"
+        style="@style/Box"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/box_4"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/box5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box3"
+        android:layout_marginStart="@dimen/margins_box"
+        android:layout_marginEnd="@dimen/margins_box"
+        android:textSize="@dimen/font_box"
+        android:background="#2ad11b"
+        />
+
+    <TextView
+        android:id="@+id/box5"
+        style="@style/Box"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:text="@string/box_5"
+        app:layout_constraintBottom_toBottomOf="@+id/box2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box4"
+        android:layout_marginStart="@dimen/margins_box"
+        android:layout_marginEnd="@dimen/margins_box"
+        android:gravity = "center"
+        android:textSize="@dimen/font_box"
+        android:background="#ff3874"
+        />
+
+    <Button
+        android:id="@+id/butt_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="@+id/box2" />
+
+    <Button
+        android:id="@+id/butt_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/but_reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintStart_toStartOf="@+id/box5" />
+
+    <TextView
+        android:id="@+id/snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/box1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="165dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
